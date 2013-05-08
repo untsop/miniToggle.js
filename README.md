@@ -26,3 +26,7 @@ JS:
                 $(".result").html("No, you turn me off.")
         });
 	});
+
+## License
+
+miniToggle.js is licensed under MIT http://www.opensource.org/licenses/MIT
