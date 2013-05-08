@@ -1,0 +1,92 @@
+.toggle {
+  position: relative;
+  width: 45px;
+  height: 20px;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, .1);
+}
+
+.toggle-handle {
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(top, #fff 0, #f2f2f2 100%);
+  background-image: linear-gradient(to bottom, #fff 0, #f2f2f2 100%);
+  border: 1px solid #AAA;
+  border-radius: 100px;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out, border 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, border 0.1s ease-in-out;
+  box-shadow: 0px 2px 3px 0 rgba(0,0,0,0.20);
+}
+
+.toggle.active {
+  background-color: #69BDFE;
+  background-image: -webkit-linear-gradient(top, #4095D7 0, #69BDFE 100%);
+  background-image: linear-gradient(to bottom, #4095D7 0, #69BDFE 100%);
+  border: 1px solid #3C78A5;
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, .25);
+}
+
+.toggle.active .toggle-handle {
+  border-color: #0a76ad;
+  -webkit-transform: translate3d(28px,0,0);
+  transform: translate3d(28px,0,0);
+}
+
+/*green*/
+
+.green .toggle.active {
+  background-color: #7DD53D;
+  background-image: -webkit-linear-gradient(top, #5BA525 0, #7DD53D 100%);
+  background-image: linear-gradient(to bottom, #5BA525 0, #7DD53D 100%);
+  border-color: #62AA2E;
+}
+
+.green .toggle.active .toggle-handle {
+  border-color: #62AA2E;
+}
+
+/*yellow*/
+
+.yellow .toggle.active {
+  background-color: #FFE186;
+  background-image: -webkit-linear-gradient(top, #FC3 0, #FFE186 100%);
+  background-image: linear-gradient(to bottom, #FC3 0, #FFE186 100%);
+  border-color: #F1C12F;
+}
+
+.yellow .toggle.active .toggle-handle {
+  border-color: #F1C12F;
+}
+
+/*red*/
+
+.red .toggle.active {
+  background-color: #F79A7A;
+  background-image: -webkit-linear-gradient(top, #EC6231 0, #F79A7A 100%);
+  background-image: linear-gradient(to bottom, #EC6231 0, #F79A7A 100%);
+  border-color: #EC6231;
+}
+
+.red .toggle.active .toggle-handle {
+  border-color: #EC6231;
+}
+
+/*orange*/
+
+.orange .toggle.active {
+  background-color: #FFB777;
+  background-image: -webkit-linear-gradient(top, #F70 0, #FFB777 100%);
+  background-image: linear-gradient(to bottom, #F70 0, #FFB777 100%);
+  border-color: #F70;
+}
+
+.orange .toggle.active .toggle-handle {
+  border-color: #F70;
+}

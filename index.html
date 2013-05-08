@@ -1,0 +1,69 @@
+<!doctype html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,maximum-scale=1">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>miniToggle.js</title>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="minitoggle.css">
+
+<body>
+    <section class="holder holder-top">
+
+        <h1><strong title="Pick a Date" class="highlight">miniToggle.js</strong></h1>
+        <h2>A jQuery plugin to create toggle button<br><small class="dimmed"><small><small>uncompressed size: 838 bytes.</small></small></small></h2>
+
+        <h3>As easy as: <code data-language="javascript">$('.toggle').minitoggle()</code>.</h3>
+        <h3>Go ahead&hellip; try it now.</h3>
+
+        <fieldset class="demo">
+            <div>
+            <div class="toggle"></div>
+            <h3 class="result"></h3>
+            </div>
+        </fieldset>
+
+        <fieldset class="demo colors">
+            <span class="blue"></span>
+            <span class="green"></span>
+            <span class="yellow"></span>
+            <span class="red"></span>
+            <span class="orange"></span>
+        </fieldset>
+
+
+        <div class="aligncenter">
+            <p><a class="button" href="https://github.com/unstop/miniToggle.js/archive/gh-pages.zip">Download miniToogle.js</a></p>
+            <small class="dimmed">
+                <p>Browser support: IE8+, Chrome, Firefox, Safari, Opera, iOS Safari, Android browser</p>
+                <p>Dependency: jQuery 1.7+</p>
+            </small>
+            <p><a href="https://github.com/unstop/miniToggle.js">view project on Github</a></p>
+        </div>
+
+    </section>
+
+    <section class="holder holder-clean aligncenter">
+        <p class="dimmed"><small>Made by <a class="dimmed" href="http://mi93.com" target="_blank">MI93</a></small></p>
+    </section>
+
+    <script src="js/jquery.js"></script>
+    <script src="minitoggle.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <script type="text/javascript">
+        $('.toggle').minitoggle();
+        $('.toggle').on("toggle", function(e){
+            if (e.isActive)
+                $(".result").html("Oh, you turn me on.")
+            else
+                $(".result").html("No, you turn me off.")
+        });
+    </script>
+
+
+
+</body>
