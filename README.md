@@ -2,7 +2,7 @@
 
 A jQuery plugin to create toggle button
 
-Try it now: [http://unstop.github.io/miniToggle.js/](http://lou.github.com/miniToggle.js/ "miniToggle.js")
+Try it now: [http://unstop.github.io/miniToggle.js/](http://unstop.github.com/miniToggle.js/ "miniToggle.js")
 
 ### Example
 
