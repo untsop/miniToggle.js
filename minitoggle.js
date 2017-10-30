@@ -6,11 +6,10 @@ $.fn["minitoggle"] = function(options) {
   doToggle = function(toggle) {
     active = toggle.toggleClass("active").hasClass("active");
     handle = toggle.find(".toggle-handle");
-    offset = (active ? toggle.width() - handle.width() : 0);
+    handlePosition = handle.position()
+    offset = (active ? toggle.width() - handle.width() - handlePosition.left * 2 : 0);
     handle.css({
       transform: "translate3d(" + offset + "px,0,0)",
-      "-ms-transform": "translate3d(" + offset + "px,0,0)",
-      webkitTransform: "translate3d(" + offset + "px,0,0)"
     });
     return toggle.trigger({
       type: "toggle",
