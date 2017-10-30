@@ -18,7 +18,7 @@ $.fn["minitoggle"] = function(options) {
     });
   };
   this.each(function() {
-    self = $(this);
+    var self = $(this);
     self.html("<div class=\"minitoggle\"><div class=\"toggle-handle\"></div></div>");
     self.click(function() {
       doToggle(self);
