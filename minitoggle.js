@@ -4,6 +4,7 @@ $.fn["minitoggle"] = function(options) {
     on: false
   }, options);
   doToggle = function(toggle) {
+    toggle = toggle.find(".minitoggle");
     active = toggle.toggleClass("active").hasClass("active");
     handle = toggle.find(".toggle-handle");
     handlePosition = handle.position()
@@ -18,7 +19,7 @@ $.fn["minitoggle"] = function(options) {
   };
   this.each(function() {
     self = $(this);
-    self.html("<div class=\"toggle-handle\"></div>");
+    self.html("<div class=\"minitoggle\"><div class=\"toggle-handle\"></div></div>");
     self.click(function() {
       doToggle(self);
     });
