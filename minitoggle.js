@@ -5,16 +5,14 @@ $.fn["minitoggle"] = function(options) {
   }, options);
   doToggle = function(toggle) {
     toggle = toggle.find(".minitoggle");
-    active = toggle.toggleClass("active").hasClass("active");
+    inactive = toggle.hasClass("active");
     handle = toggle.find(".toggle-handle");
-    handlePosition = handle.position()
-    offset = (active ? toggle.width() - handle.width() - handlePosition.left * 2 : 0);
-    handle.css({
-      transform: "translate3d(" + offset + "px,0,0)",
-    });
+    handlePosition = handle.position();
+    offset = (inactive ? 0 : toggle.width() - handle.width() - handlePosition.left * 2);
+    toggle.toggleClass("active");
     return toggle.trigger({
       type: "toggle",
-      isActive: active
+      isActive: !inactive
     });
   };
   this.each(function() {
